@@ -9,7 +9,6 @@ def start_page():
 
 @app.route("/survey/new", methods=['POST'])
 def info():
-    print("Hello World!")
     session["info"] = {
         "name" : request.form["name"],
         "location" : request.form["location"],
